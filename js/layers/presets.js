@@ -27,7 +27,7 @@ addLayer("presets", {
 					if (player.presets.include[i]) affects.push(i);
 				}
 				if (affects.length == 0) {
-					alert("Please select at least one machine before proceeding.");
+					alert("请在继续之前至少选择一台机器.");
 					return;
 				}
 
@@ -97,5 +97,5 @@ function loadPreset(preset) {
 	doPopup("", "Preset \"" + preset.name + "\" loaded.", "Presets", 2, "#8bf");
 }
 function deletePreset(id) {
-	if (confirm("Are you sure you want to delete this preset?")) player.presets.presets.splice(id, 1);
+	if (confirm("您确定要删除此预设吗？")) player.presets.presets.splice(id, 1);
 }
